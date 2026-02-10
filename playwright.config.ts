@@ -1,25 +1,11 @@
-import { defineConfig } from '@playwright/test';
-
 export default defineConfig({
   testDir: './tests',
 
   use: {
+    headless: true,
     baseURL: 'https://www.saucedemo.com',
-
-    headless: false,
-
-    launchOptions : {
-      slowMo: 1000, 
-        },
-
-    video: 'on',
-
     screenshot: 'only-on-failure',
-
-    trace: 'on-first-retry',
+    video: 'retain-on-failure',
+    trace: 'retain-on-failure'
   },
-
-  reporter: [
-    ['html', { open: 'never' }],
-  ],
 });
