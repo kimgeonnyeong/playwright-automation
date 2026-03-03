@@ -1,3 +1,5 @@
+// PR 연습용 수정
+
 import { test, expect } from '@playwright/test';
 
 test('SauceDemo 전체 시나리오 (로그인 포함 + 천천히 보기)', async ({ page }) => {
