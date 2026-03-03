@@ -2,7 +2,7 @@
 
 import { test, expect } from '@playwright/test';
 
-test('FEATURE_VERSION', async ({ page }) => {
+test('MAIN_VERSION', async ({ page }) => {
 
   // ✅ 1) 로그인 화면 진입
   await test.step('로그인 페이지 열기', async () => {
