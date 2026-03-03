@@ -12,7 +12,6 @@ test('MAIN_VERSION', async ({ page }) => {
     // 천천히 보기용 잠깐 멈춤
     await page.waitForTimeout(1000);
   });
-
   
   // ✅ 2) 로그인 수행
   await test.step('로그인 하기', async () => {
