@@ -13,6 +13,8 @@ test('MAIN_VERSION', async ({ page }) => {
     await page.waitForTimeout(1000);
   });
   
+  // conflict version A
+  
   // ✅ 2) 로그인 수행
   await test.step('로그인 하기', async () => {
     await page.locator('#user-name').fill('standard_user');
